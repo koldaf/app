@@ -1,0 +1,22 @@
+.username{
+    width: 51vb;
+    border-radius: 0.3;
+    font-size: 1.5em !important;
+    padding: 5px;
+}
+.btn-width{
+    width: 100%;
+}
+.section{
+    width: 100%;
+    padding:0px 15px 0px 15px;
+    margin: auto;
+}
+.dashboard-menu{
+    display: inline;
+}
+.dashboard-menu > li{
+    display: inline;
+    padding: 50px 50px 50px 50px;
+    
+}

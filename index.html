@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Learn</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="assets/fullpage/fullpage.min.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" aria-label="Tenth navbar example">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Web Learn</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div id="fullpage">
+      <section class="section" id="dashboard">
+        <div class="row">
+            <div class="col-6">
+                <p class="mt-5"> _ </p>
+                <h1 class="mt-5">Welcome to WebLearn</h1>
+                <h3>Learn the basic principles of electricity.</h3>
+                <input type="text" name="user" placeholder="Username" class="username mt-5" />
+                <button type="submit" class="btn btn-info mx-auto">Enter</button>
+            </div>
+            <div class="col-6">
+                <img src="images/weblearn.png" width="100%" alt="weblearn" draggable="false">
+            </div>
+        </div>
+      </section>
+      <section class="section" id="dashboard">
+        <div class="row">
+            <div class="col-6">
+                <p class="mt-5"> _ </p>
+                <h1 class="mt-5">Dashboard</h1>
+                <h4>Your can start learning with any of the topics.</h4>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Transformer</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#firstPage" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Conductors and Insulators</h5>
+                        <p class="card-text">Conductors are defined as the materials or substances that allow electricity to flow through them.</p>
+                        <a href="#secondPage" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="row">
+                  <div class="col-sm-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Series and Parallel Connection</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#thirdPage" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Electric Motor</h5>
+                        <p class="card-text">An electric motor is an electrical machine that converts electrical energy into mechanical energy.</p>
+                        <a href="#fourthPage" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <ul class="dashboard-menu" id="myMenu">
+                    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
+                    <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
+                    <li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
+                    <li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth section</a></li>
+                </ul>
+                </div>
+            </div>
+            <div class="col-6">
+                <img src="images/weblearn.png" width="100%" alt="weblearn" draggable="false">
+            </div>
+        </div>
+      </section>
+    </div>  
+    
+    <script src="js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="assets/fullpage/fullpage.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
