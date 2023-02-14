@@ -6,10 +6,11 @@
     <title>Web Learn</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="assets/fullpage/fullpage.min.css" rel="stylesheet"/>
+    <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
     <link href="css/style.css" rel="stylesheet"/>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" aria-label="Tenth navbar example">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -26,14 +27,14 @@
         </div>
       </nav>
     <div id="fullpage">
-      <section class="section" id="dashboard">
+      <section class="section" id="index">
         <div class="row">
             <div class="col-6">
-                <p class="mt-5"> _ </p>
+                <p class="mt-5"><i class="bi bi-person-circle"></i> <span class="userId"></span> </p>
                 <h1 class="mt-5">Welcome to WebLearn</h1>
                 <h3>Learn the basic principles of electricity.</h3>
-                <input type="text" name="user" placeholder="Username" class="username mt-5" />
-                <button type="submit" class="btn btn-info mx-auto">Enter</button>
+                <input type="text" id="username" name="user" placeholder="Username" class="username mt-5" />
+                <button type="submit" class="btn btn-info mx-auto" onclick="logIn()">Enter</button>
             </div>
             <div class="col-6">
                 <img src="images/weblearn.png" width="100%" alt="weblearn" draggable="false">
@@ -43,7 +44,7 @@
       <section class="section" id="dashboard">
         <div class="row">
             <div class="col-6">
-                <p class="mt-5"> _ </p>
+                <p class="mt-5 user"><i class="bi bi-person-circle"></i> <span class="userId"></span> </p>
                 <h1 class="mt-5">Dashboard</h1>
                 <h4>Your can start learning with any of the topics.</h4>
                 <div class="row">
@@ -51,8 +52,8 @@
                     <div class="card">
                       <div class="card-body">
                         <h5 class="card-title">Transformer</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#firstPage" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text">A transformer is a passive component that transfers electrical energy from one electrical circuit to another circuit...</p>
+                        <a href="#thirdPage" class="btn btn-custom">Open</a>
                       </div>
                     </div>
                   </div>
@@ -61,7 +62,7 @@
                       <div class="card-body">
                         <h5 class="card-title">Conductors and Insulators</h5>
                         <p class="card-text">Conductors are defined as the materials or substances that allow electricity to flow through them.</p>
-                        <a href="#secondPage" class="btn btn-primary">Go somewhere</a>
+                        <a href="#sixthPage" class="btn btn-custom">Open</a>
                       </div>
                     </div>
                   </div>
@@ -71,8 +72,8 @@
                     <div class="card">
                       <div class="card-body">
                         <h5 class="card-title">Series and Parallel Connection</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#thirdPage" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text">The basic idea of a “series” connection is that components are connected end-to-end in a line to form a single path... </p>
+                        <a href="#fourthPage" class="btn btn-custom">Open</a>
                       </div>
                     </div>
                   </div>
@@ -81,7 +82,7 @@
                       <div class="card-body">
                         <h5 class="card-title">Electric Motor</h5>
                         <p class="card-text">An electric motor is an electrical machine that converts electrical energy into mechanical energy.</p>
-                        <a href="#fourthPage" class="btn btn-primary">Go somewhere</a>
+                        <a href="#fifthPage" class="btn btn-custom">Open</a>
                       </div>
                     </div>
                   </div>
@@ -91,6 +92,7 @@
                     <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
                     <li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
                     <li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth section</a></li>
+                    <li data-menuanchor="fifthPage"><a href="#fifthPage">Fourth section</a></li>
                 </ul>
                 </div>
             </div>
@@ -99,10 +101,113 @@
             </div>
         </div>
       </section>
+      <!--3rd-->
+      <section class="section" id="transformer">
+        <div class="row">  
+          <div class="col-sm-4">
+              <div class="row">
+                <nav class="nav">
+                  <a class="nav-link"><i class="bi bi-person-circle"></i> <span class="userId"></span> </a>
+                  <a class="nav-link active" aria-current="page" href="#secondPage">Dashboard</a>
+                </nav>
+              </div>
+              <h1 class="mt-5">Transformers</h1>
+              <h4>Learning Outcomes</h4>
+              <p>At the end of this lesson, you should be able to:</p>
+              <ol>
+                <li>define transformer</li>
+                <li>state the purpose of transformer</li>
+                <li>explain the principles of mutual induction</li>
+                <li>identify the common types of transformer from their schematic diagram</li>
+                <li>state and explain some of characteristics of transformer</li>
+              </ol>
+          </div>
+          <div class="col-sm-8">
+            <iframe src="https://h5p.org/h5p/embed/1283690" width="90%" height="98" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *" title="Transformers"></iframe>
+          </div>
+      </div>
+      </section>
+      <!--4th page-->
+      <section class="section" id="seriesParallel">
+        <div class="row">  
+          <div class="col-sm-4">
+              <div class="row">
+                <nav class="nav">
+                  <a class="nav-link"><i class="bi bi-person-circle"></i> <span class="userId"></span> </a>
+                  <a class="nav-link active" aria-current="page" href="#secondPage">Dashboard</a>
+                </nav>
+              </div>
+              <h1 class="mt-5">Series and Parallel Connection</h1>
+              <h4>Learning Outcomes</h4>
+              <p>At the end of this lesson, you should be able to:</p>
+              <ol>
+                <li>define and explain series and parallel connection</li>
+                <li>explain the application of series and parallel connection</li>
+                <li>list and explain the advantages and disadvantages of series and parallel connection</li>
+                <li>calculate the equivalent resistance of a resistor connected in series and parallel</li>
+                <li>define the term "Equivalent Resistance"</li>
+              </ol>
+          </div>
+          <div class="col-sm-8">
+            <iframe src="https://h5p.org/h5p/embed/1349670" width="98%" height="713" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *" title="Series and Parallel Connection"></iframe>
+          </div>
+      </div>
+      </section>
+      <!--5th-->
+      <section class="section" id="electricMotor">
+        <div class="row">  
+          <div class="col-sm-4">
+              <div class="row">
+                <nav class="nav">
+                  <a class="nav-link"><i class="bi bi-person-circle"></i> <span class="userId"></span> </a>
+                  <a class="nav-link active" aria-current="page" href="#secondPage">Dashboard</a>
+                </nav>
+              </div>
+              <h1 class="mt-5">Electric Motor</h1>
+              <h4>Learning Outcomes</h4>
+              <p>At the end of this lesson, you should be able to:</p>
+              <ol>
+                <li>define and explain series and parallel connection</li>
+                <li>explain the application of series and parallel connection</li>
+                <li>list and explain the advantages and disadvantages of series and parallel connection</li>
+                <li>calculate the equivalent resistance of a resistor connected in series and parallel</li>
+                <li>define the term "Equivalent Resistance"</li>
+              </ol>
+          </div>
+          <div class="col-sm-8">
+            <iframe src="https://h5p.org/h5p/embed/1349670" width="98%" height="713" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *" title="Series and Parallel Connection"></iframe>
+          </div>
+      </div>
+      </section>
+      <!--6th-->
+      <section class="section" id="conductorsInsulator">
+        <div class="row">  
+          <div class="col-sm-4">
+              <div class="row">
+                <nav class="nav">
+                  <a class="nav-link"><i class="bi bi-person-circle"></i> <span class="userId"></span> </a>
+                  <a class="nav-link active" aria-current="page" href="#secondPage">Dashboard</a>
+                </nav>
+              </div>
+              <h1 class="mt-5">Conductors and Insulators</h1>
+              <h4>Learning Outcomes</h4>
+              <p>At the end of this lesson, you should be able to:</p>
+              <ol>
+                <li>define a conductor and insulators</li>
+                <li>state at least three applications of conductors and insulators</li>
+                <li>mention at least five differences between conductors and insulators</li>
+              </ol>
+          </div>
+          <div class="col-sm-8">
+            <iframe src="https://h5p.org/h5p/embed/1349600" width="98%" height="558" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *" title="Conductors and Insulators"></iframe>
+          </div>
+      </div>
+      </section>
     </div>  
     
     <script src="js/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
     <script src="assets/fullpage/fullpage.min.js"></script>
     <script src="js/app.js"></script>
   </body>

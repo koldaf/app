@@ -17,6 +17,13 @@
 }
 .dashboard-menu > li{
     display: inline;
-    padding: 50px 50px 50px 50px;
-    
+    padding: 50px 50px 50px 50px;   
+}
+.btn-custom{
+    background-color: #4BBFC3 !important;
+}
+.user{
+    width: 40%;
+    padding: 5px;
+    box-shadow: 2px 2px 2px #0b2627;
 }
