@@ -22,7 +22,7 @@ function checkLogIn(){
     //return to last save page
     //get last known location
     console.log(username);
-    //window.location.href = 
+    //window.location.href 
   }
 }
 
@@ -52,7 +52,7 @@ $('document').ready(function(){
     //check if user is on
     checkLogIn();
     
-    //save last page
+    //save last pagess
     curPage();
   
 });
