@@ -3,9 +3,9 @@ function logIn(){
   const username = $('#username').val();
   if(username !== ''){
     sessionStorage.setItem('username', username);
+    //display login 
+    $('.userId').html(username);
     //check if there is a history on the user
-
-    
       window.location.href = "#secondPage";
     
   }
